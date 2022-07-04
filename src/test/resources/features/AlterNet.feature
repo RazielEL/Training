@@ -1,14 +1,14 @@
 Feature: doing stuff on Alternet.org
 
 
-  @an
+
   Scenario: Logo button is visible
     # Given user goes to alternet page
     Then logo is visible
 
 
 
-  @an
+
   Scenario: Dashboard is visible
     # Given user goes to alternet page
   Then Dashboard is displayed
