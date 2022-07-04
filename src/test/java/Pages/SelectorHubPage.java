@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SelectorHubPagePage extends CommonMethods {
+public class SelectorHubPage extends CommonMethods {
 
     @FindBy(xpath ="//*[@id=\"userId\"]")
     public WebElement userEmail;
@@ -22,7 +22,7 @@ public class SelectorHubPagePage extends CommonMethods {
     @FindBy(id = "inp_val")
     public WebElement firstCrush;
 
-    public SelectorHubPagePage(){
+    public SelectorHubPage(){
         PageFactory.initElements(drv,this);
     }
 

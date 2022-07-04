@@ -2,20 +2,23 @@ package Utils;
 
 import Pages.AlterNetPage;
 import Pages.GooglePage;
-import Pages.SelectorHubPagePage;
+import Pages.IkeaPage;
+import Pages.SelectorHubPage;
 
 public class PageInitializers {
 
-    public static SelectorHubPagePage selectorHubPage;
+    public static SelectorHubPage selectorHubPage;
     public static GooglePage google;
     public static AlterNetPage alterNetPage;
+    public static IkeaPage ikeaPage;
 
 
 
     public static void initializePageObjects(){
-        selectorHubPage = new SelectorHubPagePage();
+        selectorHubPage = new SelectorHubPage();
         google = new GooglePage();
         alterNetPage = new AlterNetPage();
+        ikeaPage = new IkeaPage();
     }
 
 }
