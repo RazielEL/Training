@@ -1,7 +1,7 @@
 Feature: doing stuff on Alternet.org
 
 
-  
+  @an
   Scenario: Logo button is visible
     # Given user goes to alternet page
     Then logo is visible
