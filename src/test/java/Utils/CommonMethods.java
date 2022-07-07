@@ -21,19 +21,19 @@ public class CommonMethods extends PageInitializers {
         ConfigReader.readProperties(Constants.CONFIGURATION_FILEPATH);
 
 
-    //    WebDriverManager.chromedriver().setup();
-     //   drv = new ChromeDriver();
+       WebDriverManager.chromedriver().setup();
+        drv = new ChromeDriver();
 
         // to do gory skomentowane bo Jenkins nie ogarnia
         // to nizej musi byc zeby jenkins ogarnial
 
-       ChromeOptions chromeOptions = new ChromeOptions();
-      chromeOptions.setHeadless(true);
-        WebDriverManager.chromedriver().setup();
-        drv = new ChromeDriver(chromeOptions);
+//       ChromeOptions chromeOptions = new ChromeOptions();
+//      chromeOptions.setHeadless(true);
+//        WebDriverManager.chromedriver().setup();
+//        drv = new ChromeDriver(chromeOptions);
 
 
-        drv.get(ConfigReader.getPropertyValue("url3"));
+        drv.get(ConfigReader.getPropertyValue("url4"));
         drv.manage().window().maximize();
       //  drv.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         initializePageObjects();

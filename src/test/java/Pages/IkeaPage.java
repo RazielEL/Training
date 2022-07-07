@@ -12,19 +12,19 @@ public class IkeaPage extends CommonMethods {
     @FindBy (xpath = "/html/body/header/div/div/div/div[2]/div/div/form/div[1]/div/input")
     public WebElement searchBox;
 
-    @FindBy (id = "/html/body/main/div/div/section[3]/div/div/div[1]/div[3]/div[1]/button")
+    @FindBy (xpath = "/html/body/main/div/div/section[3]/div/div/div[1]/div[3]/div[1]/button")
     public WebElement addToCartSofa;
 
     @FindBy (xpath = "/html/body/header/div/div/div/ul/li[5]/a/span")
     public  WebElement cartButton;
 
-    @FindBy (xpath = "(//button[contains(@id, 'add_to_cart')])[3]")
+    @FindBy (xpath = "/html/body/main/div/div/section[3]/div/div/div[1]/div[3]/div[1]/button")
     public WebElement addToCartTable;
 
     @FindBy (xpath = "//*[@id=\"one-checkout\"]/main/div/div/div/div[19]")
     public WebElement shoppingBagContent;
 
-    @FindBy (xpath = "//*[@id=\"cart-coupon\"]/div[1]/button/span/span")
+    @FindBy (xpath = "//*[@id=\"cart-coupon\"]/div[1]/button")
     public WebElement discountButton;
 
     @FindBy (xpath = "//*[@id=\"discountCode\"]")
@@ -38,6 +38,12 @@ public class IkeaPage extends CommonMethods {
 
     @FindBy (xpath = "//*[@id=\"search-box__searchbutton\"]")
     public WebElement searchButton;
+
+    @FindBy (xpath = "//*[@id=\"clear-input\"]")
+    public WebElement clearButton;
+
+    @FindBy (xpath = "//*[@id=\"one-checkout\"]/main/div/div/div/div[19]/div[2]")
+    public List<WebElement> shoppingCartList;
 
 
     public IkeaPage(){
